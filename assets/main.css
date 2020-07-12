@@ -1,0 +1,18 @@
+body {
+  color: #526488;
+  font-weight: 500;
+}
+
+html,
+body,
+input,
+a,
+button,
+* {
+  font-family: 'Quicksand', sans-serif !important;
+}
+.app-container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 20px;
+}

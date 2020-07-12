@@ -35,6 +35,7 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
+    '~/plugins/app',
     'plugins/chakra-ui',
     { src: '~/plugins/vue-unicons', mode: 'client' },
   ],

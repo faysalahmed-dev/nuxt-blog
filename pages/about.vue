@@ -1,6 +1,6 @@
 <template>
   <c-box py="8">
-    <c-heading align="center">About Me</c-heading>
+    <c-heading align="center" fontWeight="500">About Me</c-heading>
     <c-box my="10" />
     <c-grid
       mx="auto"

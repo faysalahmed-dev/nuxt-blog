@@ -5,7 +5,18 @@ import {
   uniFacebookF,
   uniTwitter,
   uniGlobe,
+  uniArrowRight,
+  uniEye,
+  uniComment,
 } from 'vue-unicons/src/icons'
 import 'vue-unicons/dist/vue-unicons-ssr.css'
-Unicon.add([uniGithub, uniFacebookF, uniTwitter, uniGlobe])
+Unicon.add([
+  uniGithub,
+  uniFacebookF,
+  uniEye,
+  uniComment,
+  uniTwitter,
+  uniGlobe,
+  uniArrowRight,
+])
 Vue.use(Unicon)

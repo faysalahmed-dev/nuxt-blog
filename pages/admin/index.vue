@@ -7,27 +7,30 @@
       spacing="8"
     >
       <PostItem
-        v-for="(postData,postId) in postsData"
+        v-for="postData in postsData"
         :postData="postData"
-        :key="postId"
+        :key="postData.postTitle"
       />
     </c-simple-grid>
   </div>
 </template>
 
-<script>
+<script type="text/javascript">
+import AdminAside from '@/components/admin/AdminAside';
 import { CSimpleGrid } from '@chakra-ui/vue'
 import PostItem from '@/components/blog/PostItem'
 import { mapGetters } from 'vuex'
-export default {
-  computed: mapGetters({
-    postsData: 'posts',
-  }),
-  components: {
-    CSimpleGrid,
-    PostItem,
-  },
-}
-</script>
 
-<style scoped></style>
+export default {
+	computed: mapGetters({
+    	postsData: 'posts',
+  	}),
+	components: {
+		AdminAside,
+		CSimpleGrid
+	},
+  // middleware: 'auth',
+	layout: 'admin'
+}
+
+</script>

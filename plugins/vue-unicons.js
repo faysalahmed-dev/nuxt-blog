@@ -13,10 +13,10 @@ import 'vue-unicons/dist/vue-unicons-ssr.css'
 Unicon.add([
   uniGithub,
   uniFacebookF,
-  uniEye,
-  uniComment,
   uniTwitter,
   uniGlobe,
   uniArrowRight,
+  uniEye,
+  uniComment,
 ])
 Vue.use(Unicon)

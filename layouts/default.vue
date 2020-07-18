@@ -2,7 +2,7 @@
   <CThemeProvider>
     <CReset />
     <c-flex direction="column" minH="100vh">
-      <Header />
+      <AppHeader />
       <Nuxt style="flex-grow: 1;" />
     </c-flex>
   </CThemeProvider>
@@ -10,14 +10,13 @@
 
 <script>
 import { CThemeProvider, CReset, CFlex } from '@chakra-ui/vue'
-import Header from '@/components/Header'
 
 export default {
   name: 'DefaultLayout',
+  middleware: 'checkSessions',
   components: {
     CThemeProvider,
     CReset,
-    Header,
     CFlex,
   },
 }

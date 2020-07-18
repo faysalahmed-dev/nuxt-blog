@@ -16,3 +16,10 @@ button,
   width: 95%;
   margin: auto;
 }
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .05s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
